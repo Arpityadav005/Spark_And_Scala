@@ -1,0 +1,44 @@
+// Define a string and print it
+val printMe = "hello world"
+println(printMe)
+
+// Function to add two numbers and return the sum
+def sum(a: Int, b: Int): Int = {
+  return a + b
+}
+
+println(sum(90, 10))  // Output: 100
+
+// Function to check if a number is even or odd (takes input from user)
+def checkEven(): Unit = {
+  import scala.io.StdIn
+  println("Enter a number:")
+  val a = StdIn.readInt()
+  if (a % 2 == 0) {
+    println(s"$a is even")
+  } else {
+    println(s"$a is odd")
+  }
+}
+
+// Call the checkEven function
+checkEven()
+
+// Function to check odd/even using a parameter instead of user input
+def checkOdd(a: Int): Unit = {
+  if (a % 2 == 0) {
+    println(s"$a is even")
+  } else {
+    println(s"$a is odd")
+  }
+}
+
+checkOdd(5)  // Output: 5 is odd
+
+// String manipulation
+val str1 = "Arpit"
+val str2 = "rajkumar"
+println(str1 + str2)  // Output: Arpitrajkumar
+
+// String length
+println(str1.length())  // Output: 5
